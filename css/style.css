@@ -142,4 +142,30 @@ footer{
   border-radius: 1em;
 
 }
+.menu{
+  list-style:none;
+  float:left;
+}
+.menu li{
+  position:relative;
+  float:left;
+}
 
+.menu li  ul{
+  position:absolute;
+  top: 1.28em;
+  right: 8px;
+  display:none;
+
+  
+  }.menu li:hover ul, .menu li.over ul{
+    display: block;
+  }
+  
+  .menu li ul li{
+    display:block;
+    width:140px;
+    background-color: rgba(112, 5, 118, 0.686);
+    border-radius: 10px;
+    text-shadow: 2px 1px 6px white;
+    }
