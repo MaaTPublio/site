@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+#quadrado {
+    width: 10em;
+    height: 10em;
+    border: 2px inset rgb(144, 0, 157);
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #quadrado:hover {
+    border: 2px inset rgb(239, 233, 240);
+    
+  }
+  
+ /*imagem de background*/ 
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+h1{
+  text-align: center;
+  background-color: rgba(211, 89, 242, 0.275);
+  opacity: 1;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  padding: 0.2em;
+  border-radius: 1em;
+  transition: 1s;
+  font-family: 'Red Hat Mono', monospace;
+  text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+h1:hover{
+  opacity: 0.5;
+  text-shadow: 0 0 8px rgb(255, 0, 225);
+}
+
+/*Barra de navegação*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(112, 5, 118, 0.589);
+  padding: 0.3em;
+  border-radius: 1em;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+}
+
+.nav a {
+  padding: 9px;
+  color: rgba(255, 255, 255, 0.761);
+  text-decoration: none;
+	transition: 0.8s;
+	display: block;
+  background-color: rgba(112, 5, 118, 0);
+	border-bottom: 1px solid #9799A6;
+  border-radius: 12px;
+}
+
+.nav a:hover {
+  color: rgba(186, 175, 175, 0.692);
+  text-shadow: 0 0 8px white;
+  background-color: rgba(211, 89, 242, 0);
+  border-radius: 0px;
+}
+
+.logolink a {
+  border: none;
+  padding: 0px;
+}
+
+
+/* ------------ botão  ---------------*/  
+ .botoes button{ 
+  padding: 0.1em 1em;
+  background-color: rgb(149, 0, 157);
+  border-radius: 1em;
+  font:bold 12px "Arial Black", Gadget, sans-serif; 
+  font-style:normal;
+  background: -webkit-gradient(linear, left top, left bottom, from(#192e3d), to(#b75ceb));
+} 
+
+.botoes button:active{
+  background-color: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b36bee), to(#410350));
+}
+
+.botoes button:hover{
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.124);
+}
+/*------------------------------------------------------*/
+
+
+
+/*-------------logo da barra de navegação*---------------*/
+.logo{
+  border-bottom: 1px solid #9799A6;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  transition: 1s;
+}
+.logo:hover {
+  box-shadow: 2px 0 8px white;
+  border-radius: 19px;
+  transition: 1s;
+}
+/*------------------------------------------------------*/
+.imagem{
+  text-align: center;
+}
+
+
+.texto{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.05em;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.botoes {
+  text-align: center;
+}
+
+footer{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.1;
+  background-color: rgba(0, 0, 0, 0.474);
+  padding: 0.4em;
+  grid-template-rows: 60px auto 60px;
+  border-radius: 1em;
+
+}
+
