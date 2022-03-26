@@ -169,3 +169,11 @@ footer{
     border-radius: 10px;
     text-shadow: 2px 1px 6px white;
     }
+
+.contato {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.05em;
+  font-family: 'Rajdhani', sans-serif;
+  /*max-width:min-content;*/
+  }
