@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
+/*-------------------quadrado na tela principal------------------------*/
 #quadrado {
     width: 10em;
     height: 10em;
@@ -15,12 +16,29 @@
     
   }
   
- /*imagem de background*/ 
+/*-------------------gradiente de background------------------------*/
 body{
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
+  background: linear-gradient(90.15deg, #000000 51.62%, #270138 135.61%);
+}
 
+main{
+  max-width: 900px;
+  min-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media (max-width: 460px) {
+
+  .nav a{
+    font-size:13px;
+  }
+
+  .logo{
+    width: 60%;
+  }
 }
 
 h1{
@@ -55,6 +73,7 @@ h1:hover{
   border-radius: 1em;
   font-size: 1.1em;
   color: rgb(0, 0, 0);
+  margin: auto;
 }
 
 .nav a {
@@ -99,9 +118,6 @@ h1:hover{
 .botoes button:hover{
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.124);
 }
-/*------------------------------------------------------*/
-
-
 
 /*-------------logo da barra de navegação*---------------*/
 .logo{
@@ -109,6 +125,9 @@ h1:hover{
   padding-right: 0.5em;
   padding-left: 0.5em;
   transition: 1s;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 .logo:hover {
   box-shadow: 2px 0 8px white;
@@ -119,7 +138,20 @@ h1:hover{
 .imagem{
   text-align: center;
 }
+/*-------------imagem da pagina sobre---------------*/
+#imagemDev{
+  border-radius: 35px;
+  border: 2px inset rgb(144, 0, 157);
+  width: 100%;
+  max-width: 500px;
+}
 
+#imagemDev:hover{
+  border: 2px inset rgb(239, 233, 240);
+  opacity: 70%;
+  transition: .7s;
+}
+/*------------------------------------------------------*/
 
 .texto{
   color: whitesmoke;
@@ -128,24 +160,36 @@ h1:hover{
   font-family: 'Rajdhani', sans-serif;
 }
 
+#titTexto{
+  text-decoration: underline;
+  text-shadow: 0 5px 8px white;
+}
 .botoes {
   text-align: center;
 }
- 
+ /*-------------------footer------------------------*/
 footer{
   color: whitesmoke;
   text-align: center;
   font-size: 1.1;
-  background-color: rgba(0, 0, 0, 0.474);
+  background-color: rgba(112, 5, 118, 0.589);
   padding: 0.4em;
   grid-template-rows: 60px auto 60px;
   border-radius: 1em;
-
+  opacity: 80%;
 }
+
+#mateus{
+  color:white;
+  opacity: 100%;
+}
+
+/*-------------------Seleção contato da barra de nav------------------------*/
 .menu{
   list-style:none;
   float:left;
 }
+
 .menu li{
   position:relative;
   float:left;
@@ -153,13 +197,12 @@ footer{
 
 .menu li  ul{
   position:absolute;
-  top: 1.28em;
+  top: 1.0em;
   right: 8px;
   display:none;
-
-  
-  }.menu li:hover ul, .menu li.over ul{
-    display: block;
+  }
+  .menu li:hover ul, .menu li.over ul{
+    display:block;
   }
   
   .menu li ul li{
@@ -170,6 +213,18 @@ footer{
     text-shadow: 2px 1px 6px white;
     }
 
+    #menuA li a{
+      background-color: rgb(204, 0, 255);
+    }
+
+    #menuA li a:hover{
+      color: rgba(250, 11, 11, 0.692);
+      text-shadow: 0 0 8px rgb(0, 225, 255);
+      background-color: rgba(204, 0, 255, 0);
+      border-radius: 0px;
+    }
+/*------------------------------------------------------------------*/
+
 .contato {
   text-align: center;
   color: whitesmoke;
@@ -177,3 +232,4 @@ footer{
   font-family: 'Rajdhani', sans-serif;
   /*max-width:min-content;*/
   }
+
