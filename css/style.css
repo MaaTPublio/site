@@ -5,7 +5,7 @@
 #quadrado {
     width: 10em;
     height: 10em;
-    border: 2px inset rgb(144, 0, 157);
+    border: 2px inset #90009d;
     margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -15,10 +15,16 @@
     border: 2px inset rgb(239, 233, 240);
     
   }
-  
+/* /// header fixo ///
+header {   
+    position: sticky;   
+    top: 0; 
+}
+*/
+
 /*-------------------gradiente de background------------------------*/
 body{
-  background: linear-gradient(90.15deg, #000000 51.62%, #270138 135.61%);
+  background: linear-gradient(90.15deg, #000000 51.62%, #320049 95.61%);
 }
 
 main{
@@ -28,6 +34,10 @@ main{
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.conteudo-principal a:visited{
+  color: rgb(255, 0, 85);
 }
 
 @media (max-width: 460px) {
@@ -82,8 +92,7 @@ h1:hover{
   text-decoration: none;
 	transition: 0.8s;
 	display: block;
-  background-color: rgba(112, 5, 118, 0);
-	border-bottom: 1px solid #9799A6;
+	border-bottom: 1px solid #cecfd8;
   border-radius: 12px;
 }
 
@@ -180,7 +189,7 @@ footer{
 }
 
 #mateus{
-  color:white;
+  color: rgb(255, 0, 85);
   opacity: 100%;
 }
 
@@ -194,10 +203,14 @@ footer{
   position:relative;
   float:left;
 }
-
+.menu li a:hover{
+  box-shadow: 0 0 8px white;
+  border-radius: 20px;
+  transition: 1s;
+}
 .menu li  ul{
   position:absolute;
-  top: 1.0em;
+  top: 1.4em;
   right: 8px;
   display:none;
   }
@@ -208,20 +221,23 @@ footer{
   .menu li ul li{
     display:block;
     width:140px;
-    background-color: rgba(112, 5, 118, 0.686);
     border-radius: 10px;
     text-shadow: 2px 1px 6px white;
     }
 
-    #menuA li a{
-      background-color: rgb(204, 0, 255);
+    .menu li ul li a{
+      background-color: rgba(87, 1, 90, 0.493);
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.384);
+      border-radius: 15px;
     }
 
-    #menuA li a:hover{
-      color: rgba(250, 11, 11, 0.692);
-      text-shadow: 0 0 8px rgb(0, 225, 255);
-      background-color: rgba(204, 0, 255, 0);
-      border-radius: 0px;
+    .menu li ul li a:hover{
+      color: rgba(255, 255, 255, 0.692);
+      text-shadow: 8px 0 8px rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.199);
+      box-shadow: 0 0 0;
+      border-radius: 15px;
+
     }
 /*------------------------------------------------------------------*/
 
@@ -231,5 +247,5 @@ footer{
   font-size: 1.05em;
   font-family: 'Rajdhani', sans-serif;
   /*max-width:min-content;*/
-  }
+}
 
