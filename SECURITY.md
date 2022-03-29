@@ -14,3 +14,7 @@ Apenas as ultimas versões do site são suportadas, pois as mudanças são grand
 
 No site temos uma secção para o reporte de vunerabilidades, reclamações, elogios e duvidas sobre o funcionamento de todo nosso sistema.
 Se precisar de algo, favor entrar em contato pelo mesmo.
+
+## Considerações 
+
+~ Este projeto é apenas um estudo das linguagens e de suas integrações ~

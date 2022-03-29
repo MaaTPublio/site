@@ -201,7 +201,7 @@ footer{
 
 .menu li{
   position:relative;
-  float:left;
+  float: left;
 }
 .menu li a:hover{
   box-shadow: 0 0 8px white;
