@@ -23,3 +23,26 @@ function clearMsg (button){
   //window.prompt("E ae")
 }
 
+function contatoEnviar (buttonEnviar){
+  buttonEnviar.setAttribute("disabled","true");
+  setTimeout(contatoEnviado, 500, buttonEnviar)
+}
+
+function contatoEnviado (buttonEnviar){
+  var motBox = document.getElementById("motCont");
+  var buttonEnviar = document.getElementById("buttonEnviar");
+  motCont = motBox.options[motBox.selectedIndex].text;
+  if (motCont == "Selecione"){
+    window.alert("Não deixe o motivo de contato em branco!!");
+    buttonEnviar.removeAttribute("disabled");
+  }
+  else {
+    window.alert("Solicitação de contato enviada!");
+    setTimeout(initCont,1);
+}
+}
+
+
+function initCont (){
+  console.log(motCont)
+}
