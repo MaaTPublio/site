@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type=text/css rel="stylesheet" href="css/style.css" />
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js"  defer></script>
         <title>  Teste de documento em HTML </title>
     </head>    
 
@@ -48,7 +48,7 @@
             <fieldset>
                 <label for="email">Digite seu email: </label>
                 <label>
-                     <input type="email" name="email" id="contEML" required>
+                     <input type="email" name="email" id="email" required>
                 </label>
             </fieldset>
             <br>
@@ -71,7 +71,7 @@
 
                 <fieldset>
                     <div>
-                        <textarea id="contDuvTxt" cols="30" rows="5"" placeholder="Digite aqui detalhes do motivo do seu contato!" required></textarea>
+                        <textarea value="contDuvTxt" id="contDuvTxt" cols="30" rows="5"" placeholder="Digite aqui detalhes do motivo do seu contato!" required></textarea>
                     </div>
                 </fieldset>
                 
@@ -80,7 +80,8 @@
                 <section>
                     <div class="botoes">
                         <button id="limpar" type="reset">Limpar</button>
-                        <button id="buttonEnviar" type="submit" onsubmit="contatoEnviar(this)" > Enviar </button>
+                        <button id="buttonEnviar" type="submit"> Enviar </button>
+                        <script></script>
                         
                     </div>
                 </section>

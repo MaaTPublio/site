@@ -22,7 +22,20 @@ function clearMsg (button){
   button.removeAttribute("disabled")
   //window.prompt("E ae")
 }
+function contato(){
+  var motBox = document.getElementById("motCont");
+  motCont = motBox.options[motBox.selectedIndex].text;
+  console.log(motCont)
 
+}
+const btn = document.querySelector("#buttonEnviar");
+
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  const contDuvTxt2 = document.querySelector("#contDuvTxt");
+  const  value = contDuvTxt2.value;
+  console.log(value);
+});
 
 /*
 function contatoEnviar (buttonEnviar){
