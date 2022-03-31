@@ -18,3 +18,12 @@ Se precisar de algo, favor entrar em contato pelo mesmo.
 ## Considerações 
 
 ~ Este projeto é apenas um estudo das linguagens e de suas integrações ~
+
+## Notas de versão
+
+7.1.3 - 
+
+Neste versão foi implementado códigos de javascript, além de outras correções no css. 
+Na parte de html foi mexido pouca coisa.
+
+7.1.x -

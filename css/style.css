@@ -286,3 +286,6 @@ footer{
   /*max-width:min-content;*/
 }
 
+#conteudo-oculto{
+  display: none;
+}

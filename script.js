@@ -38,6 +38,10 @@ function contatoEnviado (buttonEnviar){
   }
   else {
     window.alert("Solicitação de contato enviada!");
+    var contOculto = document.getElementById("conteudo-oculto");
+    var contMain = document.getElementById("conteudo-principal");
+    contOculto.style.display = "flex";
+    contMain.style.display = "none";
     setTimeout(initCont,1);
 }
 }
@@ -45,4 +49,6 @@ function contatoEnviado (buttonEnviar){
 
 function initCont (){
   console.log(motCont)
+  if (motCont == "Dúvida")
+    window.alert("O motivo de seu contato foi relacionado a duvidas")
 }

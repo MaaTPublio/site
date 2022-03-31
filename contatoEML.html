@@ -8,7 +8,6 @@
         <title>  Teste de documento em HTML </title>
     </head>    
 
-
 <body>
     <header class= "cabecalho">
         <nav class="nav">
@@ -34,8 +33,20 @@
             </section>
             <br>
     </header>
+    <main id="conteudo-oculto">
+        <section id="ocultCont">
+            <fieldset class="contato">
+                <h1>Sua solicitação foi enviada</h1>
+                <h3>Muito obrigado por entrar em contato! Em breve solicitação será atendida!</h3>
+                <br>
+            </fieldset>
+        </section>
         
-    <main class="conteudo-principal">
+        <br>
+
+    </main>
+
+    <main id="conteudo-principal" class="conteudo-principal">
             
         <form class="contato" >  
             <fieldset>
@@ -58,19 +69,27 @@
                         </select>
                     </label>
                 </div>
-                
-                </fieldset>
-                <br>
-                <fieldset class="margin">
-                    <section class="botoes">
-                        <button id="buttonEnviar" type="buttonEnviar" onclick="contatoEnviar(this)"> Enviar </button>
-                    </section>
-                
             </fieldset>
+            <br>
+
+                <fieldset>
+                    <div>
+                        <textarea id="contDuvTxt" cols="30" rows="5"" placeholder="Digite aqui sua dúvida!!"></textarea>
+                    </div>
+                </fieldset>
+                
+                
+                <br>
+                <section>
+                    <div class="botoes">
+                        <button id="buttonEnviar" type="buttonEnviar" onclick="contatoEnviar(this)"> Enviar </button>
+                    </div>
+                </section>
         </form>
        
        
        
-        </main>
+    </main>
+
 </body>
 </html>
