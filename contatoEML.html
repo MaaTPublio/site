@@ -28,38 +28,35 @@
                 </div>  
         </nav>
         <hr>
-        <section class="conteudo-titulo">
-            <h1> Entre em contato</h1>
-            </section>
-            <br>
-    </header>
-    <main id="conteudo-oculto">
-        <section id="ocultCont">
-            <fieldset class="contato">
-                <h1>Sua solicitação foi enviada</h1>
-                <h3>Muito obrigado por entrar em contato! Em breve solicitação será atendida!</h3>
-                <br>
-            </fieldset>
-        </section>
+        <h1 id="conteudo-titulo"> > Contato via Email</h1>
         
-        <br>
+    </header>
 
-    </main>
 
     <main id="conteudo-principal" class="conteudo-principal">
             
-        <form class="contato" >  
+        <form class="contato" action="contatoEnviado.html">  
             <fieldset>
                 Entre em contato conosco diretamente via Email 
                 <br>
                 <a href="#">email@email.com</a>
             </fieldset>
             <br>
+            <div class="texto">
+                Ou nos envie uma solicitação, nos contando detalhes sobre o motivo do contato!
+            </div>
+            <fieldset>
+                <label for="email">Digite seu email: </label>
+                <label>
+                     <input type="email" name="email" id="contEML" required>
+                </label>
+            </fieldset>
+            <br>
             <fieldset>
                 <div>
                     <label> Motivo do contato</label>
                     <label>
-                        <select id="motCont">
+                        <select id="motCont" required>
                             <option selected disabled value="">Selecione</option>
                             <option id="optDuvida">Dúvida</option>
                             <option id="optREC">Reclamação</option>
@@ -74,7 +71,7 @@
 
                 <fieldset>
                     <div>
-                        <textarea id="contDuvTxt" cols="30" rows="5"" placeholder="Digite aqui sua dúvida!!"></textarea>
+                        <textarea id="contDuvTxt" cols="30" rows="5"" placeholder="Digite aqui detalhes do motivo do seu contato!" required></textarea>
                     </div>
                 </fieldset>
                 
@@ -82,13 +79,13 @@
                 <br>
                 <section>
                     <div class="botoes">
-                        <button id="buttonEnviar" type="buttonEnviar" onclick="contatoEnviar(this)"> Enviar </button>
+                        <button id="limpar" type="reset">Limpar</button>
+                        <button id="buttonEnviar" type="submit" onsubmit="contatoEnviar(this)" > Enviar </button>
+                        
                     </div>
                 </section>
         </form>
-       
-       
-       
+ 
     </main>
 
 </body>

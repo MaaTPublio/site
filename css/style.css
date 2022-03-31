@@ -223,6 +223,7 @@ footer{
   border-radius: 1em;
   opacity: 80%;
   margin-bottom: 25px;
+  margin-top: 300px;
 }
 
 #mateus{
@@ -286,6 +287,6 @@ footer{
   /*max-width:min-content;*/
 }
 
-#conteudo-oculto{
-  display: none;
+#limpar {
+  margin-right: 100px;
 }

@@ -23,8 +23,11 @@ function clearMsg (button){
   //window.prompt("E ae")
 }
 
+
+/*
 function contatoEnviar (buttonEnviar){
   buttonEnviar.setAttribute("disabled","true");
+  console.log("Contato Enviar")
   setTimeout(contatoEnviado, 500, buttonEnviar)
 }
 
@@ -40,8 +43,10 @@ function contatoEnviado (buttonEnviar){
     window.alert("Solicitação de contato enviada!");
     var contOculto = document.getElementById("conteudo-oculto");
     var contMain = document.getElementById("conteudo-principal");
+    var contTit = document.getElementsById("conteudo-titulo");
     contOculto.style.display = "flex";
     contMain.style.display = "none";
+    contTit.style.display ="none";
     setTimeout(initCont,1);
 }
 }
@@ -52,3 +57,4 @@ function initCont (){
   if (motCont == "Dúvida")
     window.alert("O motivo de seu contato foi relacionado a duvidas")
 }
+*/
