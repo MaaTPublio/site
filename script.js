@@ -88,15 +88,5 @@ function contatoEnviado (buttonEnviar){
         motCont = motBox.options[motBox.selectedIndex].text;
         console.log(motCont)
         console.log(`O motivo do seu contato foi relacionado a ${motCont}`)
-        
-        setTimeout(solicitacoesCont,20);
-}
-
-function solicitacoesCont(){
-
-const paragrafo = document.createElement("p");
-const texto = document.createTextNode("Testando");
-paragrafo.appendChild(texto);
-console.log(paragrafo);
-
+        window.location.replace("contatoEnviado.html")
 }
