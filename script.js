@@ -31,43 +31,72 @@ function contato(){
 const btn = document.querySelector("#buttonEnviar");
 
 btn.addEventListener("click", function(e) {
-  e.preventDefault();
-  const contDuvTxt2 = document.querySelector("#contDuvTxt");
-  const  value = contDuvTxt2.value;
-  console.log(value);
-});
 
-/*
-function contatoEnviar (buttonEnviar){
+  e.preventDefault();
+  var motBox = document.getElementById("motCont");
+  var emailCont = document.getElementById("email");
+  var buttonEnviar = document.getElementById("buttonEnviar");
+  motCont = motBox.options[motBox.selectedIndex].text;
+  emailCont2 = emailCont.value;
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+  usuario = email.value.substring(0, email.value.indexOf("@"));
+  dominio = email.value.substring(email.value.indexOf("@")+ 1, email.value.length);
+  if ((usuario.length >=1) &&
+  (dominio.length >=3) &&
+  (usuario.search("@")==-1) &&
+  (dominio.search("@")==-1) &&
+  (usuario.search(" ")==-1) &&
+  (dominio.search(" ")==-1) &&
+  (dominio.search(".")!=-1) &&
+  (dominio.indexOf(".") >=1)&&
+  (dominio.lastIndexOf(".") < dominio.length - 1)){
+    console.log("Email valido")
+      if (motCont == "Selecione") {
+        window.alert("Não deixe o motivo de contato em branco!!");
+  }
+      else{
+          const contDuvTxt2 = document.querySelector("#contDuvTxt");
+          const contTxt = contDuvTxt2.value;
+        if ( contTxt == "" ){
+           window.alert("Não deixe o a descrição de contato em branco!!");
+      }
+        else{
+          window.alert("Solicitação de contato enviada!");
+          setTimeout(contatoEnviar,20);
+        }}}
+  else {
+    window.alert("Digite um email válido")
+    buttonEnviar.removeAttribute("disabled");
+}})
+
+
+
+function contatoEnviar (){
   buttonEnviar.setAttribute("disabled","true");
   console.log("Contato Enviar")
-  setTimeout(contatoEnviado, 500, buttonEnviar)
+  setTimeout(contatoEnviado, 1, buttonEnviar)
 }
 
 function contatoEnviado (buttonEnviar){
-  var motBox = document.getElementById("motCont");
-  var buttonEnviar = document.getElementById("buttonEnviar");
-  motCont = motBox.options[motBox.selectedIndex].text;
-  if (motCont == "Selecione"){
-    window.alert("Não deixe o motivo de contato em branco!!");
-    buttonEnviar.removeAttribute("disabled");
-  }
-  else {
-    window.alert("Solicitação de contato enviada!");
-    var contOculto = document.getElementById("conteudo-oculto");
-    var contMain = document.getElementById("conteudo-principal");
-    var contTit = document.getElementsById("conteudo-titulo");
-    contOculto.style.display = "flex";
-    contMain.style.display = "none";
-    contTit.style.display ="none";
-    setTimeout(initCont,1);
-}
+      const contDuvTxt2 = document.querySelector("#contDuvTxt");
+      const contTxt = contDuvTxt2.value;
+      console.log(contTxt);
+      var motBox = document.getElementById("motCont");
+        motCont = motBox.options[motBox.selectedIndex].text;
+        console.log(motCont)
+        console.log(`O motivo do seu contato foi relacionado a ${motCont}`)
+        
+        setTimeout(solicitacoesCont,20);
 }
 
+function solicitacoesCont(){
 
-function initCont (){
-  console.log(motCont)
-  if (motCont == "Dúvida")
-    window.alert("O motivo de seu contato foi relacionado a duvidas")
+const paragrafo = document.createElement("p");
+const texto = document.createTextNode("Testando");
+paragrafo.appendChild(texto);
+console.log(paragrafo);
+
 }
-*/
