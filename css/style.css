@@ -54,6 +54,10 @@ main{
 
 }
 @media (max-width: 310px) {
+  #imagemDev{
+    width: 250px;;
+
+  }
   .logo{
     width: 40px;
     margin-right: 5px;
@@ -203,6 +207,7 @@ h1:hover{
   text-align: center;
   font-size: 1.05em;
   font-family: 'Rajdhani', sans-serif;
+
 }
 
 #titTexto{
