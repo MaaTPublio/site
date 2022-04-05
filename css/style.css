@@ -295,3 +295,22 @@ footer{
 #limpar {
   margin-right: 100px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(68, 0, 97);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  border: 3px solid rgb(116, 0, 142);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 0, 0);
+  border: 3px solid rgba(123, 0, 151, 0.621);
+}

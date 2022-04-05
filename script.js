@@ -1,3 +1,4 @@
+
 function doDemo (button) {
   var quadrado = document.getElementById("quadrado");
   quadrado.style.backgroundColor = "purple";
