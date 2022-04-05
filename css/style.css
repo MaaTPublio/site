@@ -133,14 +133,14 @@ h1:hover{
 	transition: 0.8s;
 	display: block;
 	border-bottom: 1px solid #cecfd8;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .nav a:hover {
   color: rgba(186, 175, 175, 0.692);
   text-shadow: 0 0 8px white;
   background-color: rgba(211, 89, 242, 0);
-  border-radius: 0px;
+  border-radius: 12px;
 }
 
 .logolink a {
