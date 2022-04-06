@@ -41,7 +41,7 @@ main{
 .conteudo-principal a:visited{
   color: rgb(255, 0, 85);
 }
-
+/* ------------ responsividade  ---------------*/  
 @media (max-width: 430px) {
   .logo{
     width: 60px;
@@ -71,7 +71,7 @@ main{
     font-size:10px;
   }
 }
-
+/* ------------ titulos h1  ---------------*/  
 h1{
   text-align: center;
   background-color: rgba(211, 89, 242, 0.275);
@@ -94,7 +94,7 @@ h1:hover{
   text-shadow: 0 0 8px rgb(255, 0, 225);
 }
 
-/*Barra de navegação redonda e fina
+/* -------- Barra de navegação redonda e fina -----------------
 .nav {
   display: flex;
   flex-direction: row;
@@ -109,7 +109,8 @@ h1:hover{
   font-size: 1.1em;
   color: rgb(0, 0, 0);
   margin: auto;
-}Barra de navegção quadrada header inteira*/ 
+}
+--------- Barra de navegção quadrada header inteira ------------*/ 
 .nav {
   display: flex;
   flex-direction: row;
@@ -143,13 +144,11 @@ h1:hover{
   border-radius: 12px;
 }
 
-.logolink a {
-  border: none;
-  padding: 0px;
+/* ------------ todos botoes  ---------------*/  
+.botoes {
+  text-align: center;
 }
 
-
-/* ------------ botão  ---------------*/  
  .botoes button{ 
   padding: 0.1em 1em;
   background-color: rgb(149, 0, 157);
@@ -160,7 +159,7 @@ h1:hover{
 } 
 
 .botoes button:active{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 0, 0);
   background: -webkit-gradient(linear, left top, left bottom, from(#b36bee), to(#410350));
 }
 
@@ -178,16 +177,18 @@ h1:hover{
   flex-direction: column;
   margin-right: px;
 }
+.logolink a {
+  border: none;
+  padding: 0px;
+}
+
 .logo:hover {
   box-shadow: 2px 0 8px white;
   border-radius: 19px;
   transition: 1s;
 }
-/*------------------------------------------------------*/
-.imagem{
-  text-align: center;
-}
-/*-------------imagem da pagina sobre---------------*/
+
+/*-------------imagem da pagina 'sobre'---------------*/
 #imagemDev{
   border-radius: 35px;
   border: 2px inset rgb(144, 0, 157);
@@ -200,7 +201,11 @@ h1:hover{
   opacity: 70%;
   transition: .7s;
 }
-/*------------------------------------------------------*/
+
+.imagem{
+  text-align: center;
+}
+/*-------------------estilo de texto e titulo-----------------------*/
 
 .texto{
   color: whitesmoke;
@@ -214,9 +219,7 @@ h1:hover{
   text-decoration: underline;
   text-shadow: 0 5px 8px white;
 }
-.botoes {
-  text-align: center;
-}
+
  /*-------------------footer------------------------*/
 footer{
   color: whitesmoke;
@@ -236,7 +239,7 @@ footer{
   opacity: 100%;
 }
 
-/*-------------------Seleção contato da barra de nav------------------------*/
+/*-------------------Seleção 'contato' da barra de nav------------------------*/
 .menu{
   list-style:none;
   float:left;
@@ -282,7 +285,7 @@ footer{
       border-radius: 15px;
 
     }
-/*------------------------------------------------------------------*/
+/*-----------------  corpo de contato do email -------------------------*/
 
 .contato {
   text-align: center;
@@ -292,10 +295,10 @@ footer{
   /*max-width:min-content;*/
 }
 
-#limpar {
+#limparForm {
   margin-right: 100px;
 }
-
+/*-------------------barra de rolagem da página------------------------*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -314,3 +317,5 @@ footer{
   background-color: rgb(0, 0, 0);
   border: 3px solid rgba(123, 0, 151, 0.621);
 }
+/*------------------------------------------------------------------*/
+
