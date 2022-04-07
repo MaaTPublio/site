@@ -180,6 +180,7 @@ h1:hover{
 .logolink a {
   border: none;
   padding: 0px;
+  text-align: left;
 }
 
 .logo:hover {
@@ -319,3 +320,6 @@ footer{
 }
 /*------------------------------------------------------------------*/
 
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before { background-color: red; }
