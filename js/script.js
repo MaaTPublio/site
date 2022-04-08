@@ -29,7 +29,8 @@ function contato(){
   console.log(motCont)
 
 }
-const btn = document.querySelector("#buttonEnviar");
+window.onload = function(){
+const btn = document.querySelector("buttonEnviar");
 
 btn.addEventListener("click", function(e) {
 
@@ -90,4 +91,21 @@ function contatoEnviado (buttonEnviar){
         console.log(motCont)
         console.log(`O motivo do seu contato foi relacionado a ${motCont}`)
         window.location.replace("contatoEnviado.html")
+}
+}
+window.onload = function(){
+  const menuBtn = document.querySelector(".burger")
+  let menuOpen = false;
+
+  menuBtn.addEventListener("click", function(event) {
+  
+  if(!menuOpen){
+  menuBtn.classList.add("open");
+  menuOpen = true;
+  console.log("teste")
+  }
+  else{
+  menuBtn.classList.remove("open");
+  menuOpen = false;
+  }})
 }
