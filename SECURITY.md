@@ -27,7 +27,7 @@ Se precisar de algo, favor entrar em contato pelo mesmo.
 Nesta versão forão incluidas diversas melhorias na parte visual do site, assim como algumas mudanças na mesma. 
 Foi implementado nova estilização da barra de scroll e uma tela para o loading do site. 
 Bugs e erros corrigidos. 
-Melhoria no código
+Melhoria e simplificação no código.
 
 #### 7.1.4 ~ 7.1.8
 

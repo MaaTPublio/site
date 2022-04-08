@@ -1,5 +1,3 @@
-import Burger from '@animated-burgers/@animated-burgers/burger-arrow' 
-import '@animated-burgers/@animated-burgers/burger-arrow/dist/styles.css' 
 
 function doDemo (button) {
   var quadrado = document.getElementById("quadrado");
@@ -93,6 +91,3 @@ function contatoEnviado (buttonEnviar){
         console.log(`O motivo do seu contato foi relacionado a ${motCont}`)
         window.location.replace("contatoEnviado.html")
 }
-
-
-

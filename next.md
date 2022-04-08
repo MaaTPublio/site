@@ -4,7 +4,7 @@
 
 | Versão  | Descrição             |
 | ------- | --------------------- |
-| 7.1.9   | Tela de carregento    |
+| 7.1.9   | Tela de carregamento|
 | 7.1.9   | Estilização do scrool |
 |         |                       |
 
